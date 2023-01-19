@@ -10,15 +10,9 @@ const PORT: any = process.env.PORT;
 
 app.register(cors)
 
-app.get('/', async () => {
-    const habits = await prisma.habit.findMany({
-        where: {
-            title: {
-                startsWith: 'beber'
-            }
-        }
-    })
-    return habits
+app.get('/hello', async () => {
+    const habits = await prisma.habit.findMany();
+    return habits;
 })
 
 app.listen({

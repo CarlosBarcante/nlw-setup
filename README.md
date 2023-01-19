@@ -20,6 +20,11 @@ Aplicação full stack feita durante a nlw-setup da Rocketseat.
 -Typescript
 -Tailwind
 
+###Front-end Mobile
+
+-React Native
+-Typescript
+
 #Autor
 
 Carlos Barçante

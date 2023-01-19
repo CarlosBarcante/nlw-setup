@@ -11,8 +11,8 @@ const PORT: any = process.env.PORT;
 app.register(cors)
 
 app.get('/hello', async () => {
-    const habits = await prisma.habit.findMany();
-    return habits;
+    const day = await prisma.day.findMany();
+    return day;
 })
 
 app.listen({

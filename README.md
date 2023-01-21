@@ -12,6 +12,7 @@ Aplicação full stack feita durante a nlw-setup da Rocketseat.
 -Node.js
 -Typescript
 -Fastify
+-Prisma
 -SQLite
 
 ###Front-end Web
@@ -24,6 +25,7 @@ Aplicação full stack feita durante a nlw-setup da Rocketseat.
 
 -React Native
 -Typescript
+-Nativewind
 
 #Autor
 

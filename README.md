@@ -27,6 +27,6 @@ Aplicação full stack feita durante a nlw-setup da Rocketseat.
 - Typescript
 - Nativewind
 
-#Autor
+# Autor
 
 Carlos Barçante

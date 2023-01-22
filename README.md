@@ -28,6 +28,7 @@ Aplicação full stack feita durante a nlw-setup da Rocketseat.
 - React Native
 - Typescript
 - Nativewind
+- Axios
 
 # Autor
 

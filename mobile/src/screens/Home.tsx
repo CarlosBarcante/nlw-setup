@@ -29,7 +29,7 @@ function Home() {
                 }
             </View>
 
-            <ScrollView contentContainerStyle={{ paddingBottom: 100 }}>
+            <ScrollView contentContainerStyle={{ paddingBottom: 100 }} showsVerticalScrollIndicator={false}>
                 <View className='flex-row flex-wrap'>
                     {
                         dates.map((day, i) => {

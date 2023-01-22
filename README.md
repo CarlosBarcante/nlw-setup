@@ -1,31 +1,31 @@
-#NLW-Setup
+# NLW-Setup
 
 
-#Sobre
+# Sobre
 
 Aplicação full stack feita durante a nlw-setup da Rocketseat.
 
-##Tecnologias utilizadas
+## Tecnologias utilizadas
 
-###Back-end
+### Back-end
 
--Node.js
--Typescript
--Fastify
--Prisma
--SQLite
+- Node.js
+- Typescript
+- Fastify
+- Prisma
+- SQLite
 
-###Front-end Web
+### Front-end Web
 
--React
--Typescript
--Tailwind
+- React
+- Typescript
+- Tailwind
 
-###Front-end Mobile
+### Front-end Mobile
 
--React Native
--Typescript
--Nativewind
+- React Native
+- Typescript
+- Nativewind
 
 #Autor
 

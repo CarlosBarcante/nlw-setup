@@ -21,6 +21,7 @@ Aplicação full stack feita durante a nlw-setup da Rocketseat.
 - Typescript
 - Tailwind
 - Radix
+- Axios
 
 ### Front-end Mobile
 

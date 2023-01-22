@@ -5,12 +5,10 @@ const week = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
 
 const dates = datesFromYear();
 
-console.log(dates);
-
 function HabitsTable() {
     return (
-        <div className='flex mx-auto'>
-            <div className='grid grid-rows-7 grid-flow-row gap-3'>
+        <div className='w-full flex overflow-x-scroll'>
+            <div className='grid grid-rows-7 grid-flow-row gap-3 '>
 
                 {week.map((day, i) => {
                     return (
@@ -26,7 +24,7 @@ function HabitsTable() {
 
             <div className='grid grid-rows-7 grid-flow-col gap-3'>
                 {dates.map(date => {
-                    return <HabitDay key={date.toString()} />
+                    return <HabitDay amount={5} completed={3} key={date.toString()} />
                 })}
             </div>
         </div>

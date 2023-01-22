@@ -2,8 +2,8 @@ import dayjs from 'dayjs';
 
 // generate dates from the beginning of the year until now
 function datesFromYear() {
-    const firstDay = dayjs().startOf('month');
-    const lastDay = dayjs().endOf('month').add(2, 'month');
+    const firstDay = dayjs().startOf('year');
+    const lastDay = dayjs().endOf('year');
 
     const dates = [];
     let compareDate = firstDay;

@@ -1,14 +1,18 @@
 import { Text, View, ScrollView } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import datesFromYear from '../utils/dates-from-year';
 
 import Header from '../components/Header';
 import HabitDay, { DAY_SIZE } from '../components/HabitDay';
 
+
 const week = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
 const dates = datesFromYear();
 
 function Home() {
+    const { navigate } = useNavigation();
+
     return (
         <View className='flex-1 bg-background px-8 pt-16'>
             <Header />
@@ -29,12 +33,18 @@ function Home() {
                 }
             </View>
 
-            <ScrollView contentContainerStyle={{ paddingBottom: 100 }} showsVerticalScrollIndicator={false}>
+            <ScrollView
+                contentContainerStyle={{ paddingBottom: 100 }}
+                showsVerticalScrollIndicator={false}
+            >
                 <View className='flex-row flex-wrap'>
                     {
-                        dates.map((day, i) => {
+                        dates.map((date, i) => {
                             return (
-                                <HabitDay key={day.toISOString()} />
+                                <HabitDay
+                                    key={date.toISOString()}
+                                    onPress={() => navigate('habit', { date: date.toISOString() })}
+                                />
                             )
                         })
                     }

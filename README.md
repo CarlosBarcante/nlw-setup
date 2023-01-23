@@ -3,7 +3,7 @@
 
 # Sobre
 
-Aplicação full stack feita durante a nlw-setup da Rocketseat.
+Aplicação full stack feita durante a nlw-setup da Rocketseat. Aplicação permite criar, editar e monitorar hábitos diários.
 
 ## Desktop
 

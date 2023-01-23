@@ -46,6 +46,7 @@ function HabitsTable() {
 
             <div className='grid grid-rows-7 grid-flow-col gap-3'>
                 {
+                    summary.length > 0 &&
                     dates.map(date => {
                         const dayInSummary = summary.find(day => {
                             return dayjs(date).isSame(day.date, 'day');
@@ -55,7 +56,7 @@ function HabitsTable() {
                                 key={date.toString()}
                                 date={date}
                                 amount={dayInSummary?.amount}
-                                completed={dayInSummary?.completed}
+                                defaultCompleted={dayInSummary?.completed}
                             />
                         )
                     })

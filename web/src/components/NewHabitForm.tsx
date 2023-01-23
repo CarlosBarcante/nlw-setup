@@ -97,7 +97,7 @@ function NewHabitForm() {
 
             <button
                 type='submit'
-                className='mt-6 rounded-lg p-4 flex gap-3 items-center justify-center font-semibold bg-green-600 hover:bg-green-500'
+                className='mt-6 rounded-lg p-4 flex gap-3 items-center justify-center font-semibold bg-green-600 hover:bg-green-500 transition-colors'
             >
                 <Check size={20} weight='bold' />
                 Confirmar

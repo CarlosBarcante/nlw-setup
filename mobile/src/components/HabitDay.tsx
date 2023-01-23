@@ -17,6 +17,7 @@ function HabitDay({ amount = 0, completed = 0, date, ...rest }: HabitDayProps) {
     const amountCompleted = amount > 0 ? (completed / amount) * 100 : 0;
     const today = dayjs().startOf('day').toDate();
     const currentDay = dayjs(date).isSame(today);
+    const isDateInFuture = dayjs(date).startOf('day').isAfter(today);
 
     return (
         <TouchableOpacity
@@ -27,7 +28,8 @@ function HabitDay({ amount = 0, completed = 0, date, ...rest }: HabitDayProps) {
                 'bg-violet-600 border-violet-500': amountCompleted >= 60 && amountCompleted < 80,
                 'bg-violet-500 border-violet-400': amountCompleted >= 80 && amountCompleted < 100,
                 'bg-violet-400 border-violet-300': amountCompleted == 100,
-                'border-white border-4': currentDay
+                'border-white border-4': currentDay,
+                'opacity-40': isDateInFuture
             })}
             style={{ width: DAY_SIZE, height: DAY_SIZE }}
             activeOpacity={0.7}

@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { Text, View, ScrollView, Alert } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import api from '../lib/axios';
 
 import datesFromYear from '../utils/dates-from-year';
@@ -33,15 +33,14 @@ function Home() {
             setSummary(res.data);
         } catch (error) {
             Alert.alert('Ops', 'Não foi possivel carregar os dados da aplicação.');
-            setLoading(false);
         } finally {
             setLoading(false);
         }
     }
 
-    useEffect(() => {
+    useFocusEffect(useCallback(() => {
         fetchData();
-    }, [])
+    }, []));
 
     if (loading) {
         return (
